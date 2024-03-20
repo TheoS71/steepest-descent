@@ -37,7 +37,6 @@ ATOM      3 2HH  OSP3    1       3.750  -0.068  -9.293  1.00  0.00
 ...
 ```
 
-
 You can modify various minimization parameters in the main program of the script. Here's what they correspond to:
 
 - `h`: Small value used for numerical gradient calculation.
@@ -59,7 +58,6 @@ python3 scripts/mini2.py <filename>
 Where `<filename>` is the path to the file containing the coordinates of the water molecules. The file should be in the following format:
 
 ```
-<molecule> <atom> <atom_number> <x> <y> <z> 
 1SOL     OW    1   1.713   1.641   1.519
 1SOL    HW1    2   1.768   1.719   1.520
 1SOL    HW2    3   1.776   1.568   1.514
@@ -68,3 +66,46 @@ Where `<filename>` is the path to the file containing the coordinates of the wat
 > #### Attention!
 > Don't forget to update water molecule system constants according to the number of molecules. The default mode constants work for 3 molecules.
 
+### Examples of usage
+
+1. One water molecule energy minimisation with analytical gradient
+
+```bash
+python3 scripts/mini1.py data/one_water_1.txt analytical
+```
+```bash
+Nombre maximal d'itérations atteint sans convergence.
+Iteration 1000 - GRMS: 1.0966692735016927e-09
+Énergie finale : 1.2148634994298813e-19 kcal/mol
+Angle après minimisation : 104.5200 degrés
+Longueur de liaison l1 après minimisation : 0.9572 Å
+Longueur de liaison l2 après minimisation : 0.9572 Å
+```
+2. One water molecule energy minimisation with numerical gradient
+
+```bash
+python3 scripts/mini1.py data/one_water_1.txt numerical
+```
+```bash
+Convergence atteinte. Arrêt de l'optimisation.
+Iteration 130 - GRMS: 9.827304249832638e-11
+Énergie finale : 1.7770123251781158e-22 kcal/mol
+Angle après minimisation : 104.5200 degrés
+Longueur de liaison l1 après minimisation : 0.9572 Å
+Longueur de liaison l2 après minimisation : 0.9572 Å
+```
+
+3. Three water molecules energy minimisation with numerical gradient
+```bash
+python3 scripts/mini2.py data/one_water_2.txt
+```
+```bash
+Initial energy: 333.75 kcal/mol.
+Initial l_OH_1: 0.0954, 0.0966 Angstrom.
+Initial theta_1: 104.03 degrees.
+Final energy: 0.00 kcal/mol.
+Final l_OH_1: 0.9572, 0.9572 Angstrom.
+Final theta_1: 104.52 degrees.
+Converged in 132 steps.
+Energy after minimization: 2.02614832830815e-22 kcal/mol
+```

@@ -354,6 +354,8 @@ def minimize_energy(coordinates, k_bond, l_0, k_angle, theta_0,
                                   delta, epsilons, sigmas, charges)
         
         if calculate_grms(grad) < eps_lim:
+            energy = compute_total_energy(new_coords, k_bond, l_0, k_angle, theta_0, verbose="Final",
+                                          epsilons=epsilons, sigmas=sigmas, charges=charges)
             print(f"Converged in {i} steps.")
             break
 
