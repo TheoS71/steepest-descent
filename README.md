@@ -25,10 +25,18 @@ conda activate steepest-descent
 To test the algorithm of ONE water molecule, you can use the following command:
 
 ```bash
-python3 mini1.py <pdbfile> [analytical|numerical]
+python3 scripts/mini1.py <pdbfile> [analytical|numerical]
 ```
 
-Where `<pdbfile>` is the path to the PDB file containing the coordinates of the water molecule. The analytical method is used by default if no method is specified.
+Where `<pdbfile>` is the path to the PDB file containing the coordinates of the water molecule. The analytical method is used by default if no method is specified. The file should be in the following format:
+
+```
+ATOM      1  OH  OSP3    1       4.013   0.831  -9.083  1.00  0.00              
+ATOM      2 1HH  OSP3    1       4.941   0.844  -8.837  1.00  0.00              
+ATOM      3 2HH  OSP3    1       3.750  -0.068  -9.293  1.00  0.00
+...
+```
+
 
 You can modify various minimization parameters in the main program of the script. Here's what they correspond to:
 
@@ -45,12 +53,16 @@ You can modify various minimization parameters in the main program of the script
 To test the algorithm of ANY number of water molecules, you can use the following command:
 
 ```bash
-python3 mini2.py <filename> 
+python3 scripts/mini2.py <filename> 
 ```
 
 Where `<filename>` is the path to the file containing the coordinates of the water molecules. The file should be in the following format:
 
+```
 <molecule> <atom> <atom_number> <x> <y> <z> 
 1SOL     OW    1   1.713   1.641   1.519
 1SOL    HW1    2   1.768   1.719   1.520
 1SOL    HW2    3   1.776   1.568   1.514
+...
+```
+

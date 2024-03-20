@@ -5,7 +5,5 @@ channels:
 dependencies:
     - python=3.11
     - pip
-    - jupyterlab=3
-    - snakemake-minimal
     - numpy
     - matplotlib
