@@ -1,7 +1,7 @@
 # Steepest Descent Algorithm for Water Molecules Energy Minimization
 
 ---
-Authors:
+### Authors:
 
 **ZHUKOVA Nadezhda** - **SERRALTA Théo**
 
