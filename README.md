@@ -73,7 +73,7 @@ Where `<filename>` is the path to the file containing the coordinates of the wat
 ```bash
 python3 scripts/mini1.py data/one_water_1.txt analytical
 ```
-```bash
+```
 Nombre maximal d'itérations atteint sans convergence.
 Iteration 1000 - GRMS: 1.0966692735016927e-09
 Énergie finale : 1.2148634994298813e-19 kcal/mol
@@ -86,7 +86,7 @@ Longueur de liaison l2 après minimisation : 0.9572 Å
 ```bash
 python3 scripts/mini1.py data/one_water_1.txt numerical
 ```
-```bash
+```
 Convergence atteinte. Arrêt de l'optimisation.
 Iteration 130 - GRMS: 9.827304249832638e-11
 Énergie finale : 1.7770123251781158e-22 kcal/mol
@@ -99,7 +99,7 @@ Longueur de liaison l2 après minimisation : 0.9572 Å
 ```bash
 python3 scripts/mini2.py data/one_water_2.txt
 ```
-```bash
+```
 Initial energy: 333.75 kcal/mol.
 Initial l_OH_1: 0.0954, 0.0966 Angstrom.
 Initial theta_1: 104.03 degrees.
