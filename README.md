@@ -106,15 +106,22 @@ Longueur de liaison l2 après minimisation : 0.9572 Å
 
 3. Three water molecules energy minimisation with numerical gradient
 ```bash
-python3 scripts/mini2.py data/one_water_2.txt
+python3 scripts/mini2.py data/three_waters.txt
 ```
 ```
-Initial energy: 333.75 kcal/mol.
+Initial energy: 1002.61 kcal/mol.
 Initial l_OH_1: 0.0954, 0.0966 Angstrom.
 Initial theta_1: 104.03 degrees.
-Final energy: 0.00 kcal/mol.
+Initial l_OH_2: 0.0954, 0.0966 Angstrom.
+Initial theta_2: 105.01 degrees.
+Initial l_OH_3: 0.0954, 0.0966 Angstrom.
+Initial theta_3: 104.87 degrees.
 Final l_OH_1: 0.9572, 0.9572 Angstrom.
 Final theta_1: 104.52 degrees.
+Final l_OH_2: 0.9572, 0.9572 Angstrom.
+Final theta_2: 104.52 degrees.
+Final l_OH_3: 0.9572, 0.9572 Angstrom.
+Final theta_3: 104.52 degrees.
 Converged in 132 steps.
-Energy after minimization: 2.02614832830815e-22 kcal/mol
+Energy after minimization: 6.220435904335795e-22 kcal/mol
 ```
