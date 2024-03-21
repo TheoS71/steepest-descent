@@ -9,7 +9,7 @@ Master 1 Bio-informatics at *Univerité de Paris*.
 
 ---
 
-This Python application minimizes the energy of water molecules using the steepest descent algorithm. Two methods of gradient calculation are available: analytical gradient and numerical gradient. There are two scripts available: mini1.py and mini2.py according to the method of gradient calculation and the number of water molecules in the system. Use mini1.py for a single water molecule and mini2.py for any number of water molecules.
+This Python application minimizes the energy of water molecules using the steepest descent algorithm. Two methods of gradient calculation are available: analytical gradient and numerical gradient. There are two scripts available: `mini1.py` and `mini2.py` according to the method of gradient calculation and the number of water molecules in the system. Use `mini1.py` for a single water molecule and `mini2.py` for any number of water molecules.
 
 ### Create the environment
 
