@@ -5,7 +5,7 @@
 
 **ZHUKOVA Nadezhda** - **SERRALTA Théo**
 
-Master 1 Bio-informatics at *Univerité de Paris*.
+Master 1 Bio-informatics at Univerité Paris Cité.
 
 ---
 
