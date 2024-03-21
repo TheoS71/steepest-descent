@@ -65,4 +65,6 @@ Where `<filename>` is the path to the file containing the coordinates of the wat
 1SOL    HW2    3   1.776   1.568   1.514
 ...
 ```
+> #### Attention!
+> Don't forget to update water molecule system constants according to the number of molecules. The default mode constants work for 3 molecules.
 
